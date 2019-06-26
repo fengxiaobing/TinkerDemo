@@ -18,10 +18,10 @@ public class TinkerManager {
 
 
     /**
-     * 初始化
+     * 由外部调用，初始化
      * @param applicationLike
      */
-    private static void installTinker(ApplicationLike applicationLike){
+    public static void installTinker(ApplicationLike applicationLike){
         mAppLike = applicationLike;
         if(isInstalled){
             return;
@@ -30,9 +30,10 @@ public class TinkerManager {
         isInstalled = true;
     }
 
-    private static void loadPath(String patch){
+    //完成patch文件的加载
+    public static void loadPath(String patch){
        if(Tinker.isTinkerInstalled()){
-           TinkerInstaller.onReceiveUpgradePatch( getApplicationContext(),patch);
+           TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(),patch);
        }
     }
 
