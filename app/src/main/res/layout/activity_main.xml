@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.fxb.tinkerdemo.MainActivity">
 
     <Button
@@ -18,5 +19,13 @@
         android:layout_height="wrap_content"
         android:text="修复bug"
        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加is绝对是京东手机都是京东个"
+       />
+
+
+
 
 </LinearLayout>

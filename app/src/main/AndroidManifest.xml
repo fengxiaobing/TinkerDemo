@@ -5,7 +5,7 @@
 
 
     <application
-        android:name=".MyTinkerApplication"
+        android:name=".tinker.MyTinkerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".tinker.TinkerService" />
+        <service android:name=".tinker.CustomerResultService" />
+
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="jsdfsdflsdjfklskfd"/>-->
+        <!--<meta-data-->
+            <!--android:name="UMENG_CHANNEL"-->
+            <!--android:value="${UMENG_CHANNEL_VALUE}"/>-->
     </application>
 
 </manifest>
